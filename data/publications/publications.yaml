@@ -98,8 +98,8 @@
 - slug: Interaction-Merged-2025
   title: "Interaction-Merged Motion Planning: Effectively Leveraging Diverse Motion Datasets for Robust Planning"
   authors:
-    - Giwon Lee
-    - Wooseong Jeong
+    - Giwon Lee*
+    - Wooseong Jeong*
     - Daehee Park
     - Jaewoo Jeong
     - Kuk-Jin Yoon†
@@ -247,8 +247,8 @@
     - Yunseo Yang
     - Jegyeong Cho
     - Jiwon Kim
-    - Kuk-Jin Yoon† (Collaboration with Naver Labs)
-  venue: ICLR (1st rank in nuScenes prediction challenge)
+    - Kuk-Jin Yoon† (Collaboration with Naver Labs; 1st rank in nuScenes prediction challenge)
+  venue: ICLR
   category: conference
   date: 2023-03-03
   method: 
@@ -344,10 +344,10 @@
 - slug: BIPS-2022
   title: "BIPS: Bi-modal Indoor Panorama Synthesis via Residual Depth-aided Adversarial Learning"
   authors:
-    - Changgyoon Oh
-    - Wonjune Cho
-    - Daehee Park
-    - Yujeong Chae
+    - Changgyoon Oh*
+    - Wonjune Cho*
+    - Daehee Park*
+    - Yujeong Chae*
     - Lin Wang
     - Kuk-Jin Yoon†
   venue: 제 34회 영상처리 및 이해에 관한 워크샵(IPIU)

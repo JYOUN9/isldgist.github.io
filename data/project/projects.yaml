@@ -1,9 +1,30 @@
+- title: "도시형 생성 지능을 위한 사회적 군중 시뮬레이션 기술 개발"
+  duration: "07/2026 - 01/2027 (7 months)"
+  program: "국가 AI데이터센터 고도화 사업"
+  funding: "과학기술정보통신부"
+  organization: "인공지능산업융합사업단"
+  infra: "H100 * 8대"
+  status: "Ongoing"
+  category: gpu
+  start: "2026-07"
+
+- title: "희소 궤적 월드 액션 모델을 활용한 양손 조작 행동 생성 기술 개발"
+  duration: "07/2026 - 11/2026 (5 months)"
+  program: "AI연구용 컴퓨팅 지원 프로젝트"
+  funding: "과학기술정보통신부"
+  organization: "한국전자기술연구원"
+  infra: "B200 * 8대"
+  status: "Ongoing"
+  category: gpu
+  start: "2026-07"
+
 - title: "다중 휴머노이드의 자율 협업을 위한 비전-언어 모델 기반 적응형 장기·복합작업 계획 기술"
   duration: "04/2026 - 12/2030 (5 years)"
   program: "미래유망융합기술파이오니어"
   funding: "과학기술정보통신부"
   organization: "한국연구재단"
   status: "Ongoing"
+  category: research
   start: "2026-04"
 
 - title: "한국형 Physical LLM 의 실시간성과 안정성을 위한 가변형 추론 프레임워크 개발"
@@ -13,6 +34,7 @@
   organization: "정보통신산업진흥원"
   infra: "B200 * 16대"
   status: "Completed"
+  category: gpu
   start: "2026-05"
 
 - title: "아카이브 영상 콘텐츠 활용을 위한 AI Outpainting 및 콘텐츠 변환 기술 개발"
@@ -21,6 +43,7 @@
   funding: "문화체육관광부"
   organization: "한국콘텐츠진흥원"
   status: "Ongoing"
+  category: research
   start: "2026-04"
 
 - title: "자기 진화형 Physical LLM: 불확실한 환경에서 행동 파운데이션 모델의 강건하고 효율적인 적응 기술 연구"
@@ -29,6 +52,7 @@
   funding: "과학기술정보통신부"
   organization: "한국연구재단"
   status: "Ongoing"
+  category: research
   start: "2026-03"
 
 - title: "행동 파운데이션 모델의 동적 환경으로 확장을 통한 안전하고 범용적인 인간-로봇 협동 연구"
@@ -37,6 +61,7 @@
   funding: "과학기술정보통신부"
   organization: "한국연구재단"
   status: "Ongoing"
+  category: research
   start: "2025-09"
 
 - title: "Physical AI 분야의 거대 생성모델 기술 선도를 위한 LG AI STAR 인재양성 사업"
@@ -45,6 +70,7 @@
   funding: "과학기술정보통신부"
   organization: "정보통신기획평가원"
   status: "Ongoing"
+  category: research
   start: "2025-07"
 
 - title: "로봇및기계전자공학연구소"
@@ -53,6 +79,7 @@
   funding: "교육부"
   organization: "한국연구재단"
   status: "Ongoing"
+  category: research
   start: "2025-09"
 
 - title: "AI스타펠로우십지원(대구경북과학기술원)"
@@ -61,6 +88,7 @@
   funding: "과학기술정보통신부"
   organization: "정보통신기획평가원"
   status: "Ongoing"
+  category: research
   start: "2025-04"
 
 - title: "교원 start-up fund (박대희)"
@@ -69,6 +97,7 @@
   funding: "대구경북과학기술원"
   organization: "대구경북과학기술원"
   status: "Ongoing"
+  category: research
   start: "2025-02"
 
 - title: "생성형 AI 기반 16bit HDR 솔루션 개발"
@@ -76,6 +105,7 @@
   funding: "삼성 LSI"
   organization: "삼성 LSI"
   status: "Ongoing"
+  category: research
   start: "2025-05"
 
 - title: "(InnoCORE) 초거대언어모델 혁신 연구단"
@@ -84,6 +114,7 @@
   funding: "과학기술정보통신부"
   organization: "과학기술정보통신부"
   status: "Ongoing"
+  category: research
   start: "2025-07"
 
 - title: "(InnoCORE) 바이오 체화형 피지컬 AI 연구단"
@@ -92,6 +123,7 @@
   funding: "과학기술정보통신부"
   organization: "과학기술정보통신부"
   status: "Ongoing"
+  category: research
   start: "2025-07"
 
 - title: "NVIDIA Grant 2026"
@@ -99,6 +131,7 @@
   funding: "NVIDIA"
   infra: "H200 * 4대"
   status: "Ongoing"
+  category: gpu
   start: "2025-07"
 
 - title: "초거대 클라우드팜 AI GPU 가상자원"
@@ -106,4 +139,5 @@
   funding: "경북IT융합 산업기술원"
   infra: "H100 * 2대 / 20 vCPU / 150GB RAM / 40TB Storage"
   status: "Completed"
+  category: gpu
   start: "2025-07"

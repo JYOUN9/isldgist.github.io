@@ -1,4 +1,12 @@
 
+- date: 2026-07
+  type: Project
+  title: "Awarded two GPU computing support grants (국가 AI데이터센터 고도화 사업, AI연구용 컴퓨팅 지원 프로젝트)"
+  description: |-
+    Project title: 도시형 생성 지능을 위한 사회적 군중 시뮬레이션 기술 개발 (H100 × 8)
+    Project title: 희소 궤적 월드 액션 모델을 활용한 양손 조작 행동 생성 기술 개발 (B200 × 8)
+  image: "media/news/MSIT.png"
+
 - date: 2026-06-18
   type: publication
   title: "One paper accepted at ECCV 2026"

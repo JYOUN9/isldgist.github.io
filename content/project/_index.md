@@ -10,7 +10,7 @@ sections:
   - block: markdown
     id: project
     content:
-      title: Project
+      title: ""
       text: |
         {{< project-cards >}}
     design:

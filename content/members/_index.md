@@ -58,7 +58,7 @@ sections:
   - block: markdown
     id: interns
     content:
-      title: Undergraduate Students
+      title: Interns
       text: |
         <div class="members-section-divider"></div>
         {{< members-interns >}}

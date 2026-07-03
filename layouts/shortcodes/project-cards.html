@@ -52,8 +52,27 @@
     margin-bottom: 1rem;
   }
 
+  .project-subsection {
+    margin-top: 1.5rem;
+  }
+
+  .project-subsection:first-of-type {
+    margin-top: 0;
+  }
+
+  .project-subsection-title {
+    margin: 0 0 0.85rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #374151;
+  }
+
   .dark .project-section-title {
     color: #f3f4f6;
+  }
+
+  .dark .project-subsection-title {
+    color: #d1d5db;
   }
 
   .project-card {
@@ -138,8 +157,59 @@
   }
 </style>
 
+{{ define "project-card" }}
+  {{ $itemStatus := lower (.status | default "") }}
+  {{ $isCompleted := in $itemStatus "completed" }}
+  {{ $badgeSectionName := "On-Going" }}
+  {{ if $isCompleted }}
+    {{ $badgeSectionName = "Completed" }}
+  {{ end }}
+  {{ $duration := .duration | default "-" }}
+  {{ $organization := .organization | default "" | strings.TrimSpace }}
+  {{ $infra := .infra | default "" | strings.TrimSpace }}
+  {{ $durationYearsClass := "project-duration-years" }}
+  {{ if $isCompleted }}
+    {{ $durationYearsClass = "project-duration-years project-duration-years-completed" }}
+  {{ end }}
+  {{ $durationHTML := replaceRE `(\s*\([^)]*\))$` (printf `<span class="%s">$1</span>` $durationYearsClass) $duration }}
+
+  <div
+    class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-md px-6 py-5 hover:shadow-lg transition-shadow"
+    data-title="{{ lower (.title | default "") }}"
+  >
+    <h3 class="project-card-title font-semibold text-gray-900 dark:text-gray-100">
+      {{ .title | default "" }}
+    </h3>
+    <p class="project-field"><span class="project-field-label">Duration:</span>{{ $durationHTML | safeHTML }}</p>
+    {{ if .program }}
+      <p class="project-field"><span class="project-field-label">Program:</span>{{ .program }}</p>
+    {{ end }}
+    <p class="project-field"><span class="project-field-label">Funding:</span>{{ .funding | default "-" }}</p>
+    {{ if $organization }}
+      <p class="project-field"><span class="project-field-label">Organization:</span>{{ $organization }}</p>
+    {{ end }}
+    {{ if $infra }}
+      <p class="project-field"><span class="project-field-label">Infra:</span>{{ $infra }}</p>
+    {{ end }}
+    {{ if and (not $organization) (not $infra) }}
+      <p class="project-field"><span class="project-field-label">Organization:</span>-</p>
+    {{ end }}
+    <p class="project-field">
+      <span class="project-section-badge inline-block px-2.5 py-0.5 text-sm font-semibold rounded-full
+        {{ if $isCompleted }}text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-700/70
+        {{ else }}text-blue-700 dark:text-blue-300 bg-blue-100 dark:bg-blue-900/30{{ end }}">
+        {{ $badgeSectionName }}
+      </span>
+    </p>
+  </div>
+{{ end }}
+
 {{ $projects := sort (site.Data.project.projects | default (slice)) "start" "desc" }}
-{{ $sections := slice "On-Going Projects" "Completed Projects" }}
+{{ $sections := slice "On-Going" "Completed" }}
+{{ $ongoingSubsections := slice
+  (dict "key" "research" "title" "Research Projects")
+  (dict "key" "gpu" "title" "GPU Support")
+}}
 
 <div style="width: 100%; max-width: var(--project-max-width); margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem;">
   <div id="project-sections" class="project-sections">
@@ -148,7 +218,7 @@
       {{ range $projects }}
         {{ $itemStatus := lower (.status | default "") }}
         {{ $isCompleted := in $itemStatus "completed" }}
-        {{ if eq $sectionName "Completed Projects" }}
+        {{ if eq $sectionName "Completed" }}
           {{ if $isCompleted }}
             {{ $sectionProjects = $sectionProjects | append . }}
           {{ end }}
@@ -163,58 +233,39 @@
         <h2 class="project-section-title">{{ $sectionName }}</h2>
         <div class="project-section-divider"></div>
 
-        <div class="grid grid-cols-1 gap-4">
-          {{ range $sectionProjects }}
-            {{ $itemStatus := lower (.status | default "") }}
-            {{ $isCompleted := in $itemStatus "completed" }}
-            {{ $badgeSectionName := "On-Going" }}
-            {{ if $isCompleted }}
-              {{ $badgeSectionName = "Completed" }}
+        {{ if eq $sectionName "On-Going" }}
+          {{ range $sub := $ongoingSubsections }}
+            {{ $subProjects := slice }}
+            {{ range $sectionProjects }}
+              {{ $category := lower (.category | default "research") }}
+              {{ if eq $category $sub.key }}
+                {{ $subProjects = $subProjects | append . }}
+              {{ end }}
             {{ end }}
-            {{ $duration := .duration | default "-" }}
-            {{ $organization := .organization | default "" | strings.TrimSpace }}
-            {{ $infra := .infra | default "" | strings.TrimSpace }}
-            {{ $durationYearsClass := "project-duration-years" }}
-            {{ if $isCompleted }}
-              {{ $durationYearsClass = "project-duration-years project-duration-years-completed" }}
-            {{ end }}
-            {{ $durationHTML := replaceRE `(\s*\([^)]*\))$` (printf `<span class="%s">$1</span>` $durationYearsClass) $duration }}
 
-            <div
-              class="project-card bg-white dark:bg-gray-800 rounded-lg shadow-md px-6 py-5 hover:shadow-lg transition-shadow"
-              data-title="{{ lower (.title | default "") }}"
-            >
-              <h3 class="project-card-title font-semibold text-gray-900 dark:text-gray-100">
-                {{ .title | default "" }}
-              </h3>
-              <p class="project-field"><span class="project-field-label">Duration:</span>{{ $durationHTML | safeHTML }}</p>
-              {{ if .program }}
-                <p class="project-field"><span class="project-field-label">Program:</span>{{ .program }}</p>
-              {{ end }}
-              <p class="project-field"><span class="project-field-label">Funding:</span>{{ .funding | default "-" }}</p>
-              {{ if $organization }}
-                <p class="project-field"><span class="project-field-label">Organization:</span>{{ $organization }}</p>
-              {{ end }}
-              {{ if $infra }}
-                <p class="project-field"><span class="project-field-label">Infra:</span>{{ $infra }}</p>
-              {{ end }}
-              {{ if and (not $organization) (not $infra) }}
-                <p class="project-field"><span class="project-field-label">Organization:</span>-</p>
-              {{ end }}
-              <p class="project-field">
-                <span class="project-section-badge inline-block px-2.5 py-0.5 text-sm font-semibold rounded-full
-                  {{ if $isCompleted }}text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-700/70
-                  {{ else }}text-blue-700 dark:text-blue-300 bg-blue-100 dark:bg-blue-900/30{{ end }}">
-                  {{ $badgeSectionName }}
-                </span>
+            <div class="project-subsection" data-subsection-name="{{ $sub.title }}">
+              <h3 class="project-subsection-title">{{ $sub.title }}</h3>
+              <div class="grid grid-cols-1 gap-4">
+                {{ range $subProjects }}
+                  {{ template "project-card" . }}
+                {{ end }}
+              </div>
+              <p class="project-section-empty {{ if gt (len $subProjects) 0 }}hidden{{ end }}">
+                No projects in this section yet.
               </p>
             </div>
           {{ end }}
-        </div>
+        {{ else }}
+          <div class="grid grid-cols-1 gap-4">
+            {{ range $sectionProjects }}
+              {{ template "project-card" . }}
+            {{ end }}
+          </div>
 
-        <p class="project-section-empty {{ if gt (len $sectionProjects) 0 }}hidden{{ end }}">
-          No projects in this section yet.
-        </p>
+          <p class="project-section-empty {{ if gt (len $sectionProjects) 0 }}hidden{{ end }}">
+            No projects in this section yet.
+          </p>
+        {{ end }}
       </section>
     {{ end }}
   </div>
