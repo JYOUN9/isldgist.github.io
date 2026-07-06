@@ -1,0 +1,31 @@
+schema: hugoblox/author/v1
+slug: seungheelee
+category: Interns
+order: 10
+name:
+  display: Seunghee Lee
+  given: Seunghee
+  family: Lee
+role: Intern
+bio: M.S, Dankook Univ.
+tags:
+  - Physical A.I.
+  - World Model
+hidden_image: seungheelee.jpg
+links:
+  - icon: at-symbol
+    url: mailto:lsh6224@gmail.com
+    label: Email
+  - icon: homepage
+    url: https://app.notion.com/p/mohazi/Seunghee-Lee-87427227ad0e40a694bffe732e167f33
+    label: Homepage
+  - icon: brands/github
+    url: https://github.com/Arachne0
+    label: GitHub
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/%EC%8A%B9%ED%9D%AC-undefined-89986541b/
+    label: LinkedIn
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=bPXzmJAAAAAJ&hl=ko
+    label: Google Scholar
+
