@@ -1,3 +1,11 @@
+- slug: "202607-icml"
+  title: "2026 ICML"
+  folder: "202607_icml"
+  cover: "1.png"
+  category: "Conference"
+  date: "2026-07-07"
+  location: "Seoul"
+
 - slug: "202606-closing-party"
   title: "2026 Summer Group Photo"
   folder: "202606_종강파티"
