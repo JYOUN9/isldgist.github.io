@@ -1,0 +1,17 @@
+schema: hugoblox/author/v1
+slug: dongkyulee
+category: Interns
+order: 11
+name:
+  display: Dongkyu Lee
+  given: Dongkyu
+  family: Lee
+role: Intern
+bio: B.S., DGIST
+tags:
+  - Physical A.I.
+hidden_image: dongkyulee.jpg
+links:
+  - icon: at-symbol
+    url: mailto:eaststar20@dgist.ac.kr
+    label: Email
