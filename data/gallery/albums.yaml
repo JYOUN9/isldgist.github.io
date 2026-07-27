@@ -1,3 +1,11 @@
+- slug: "202607-Summer-Dinner"
+  title: "2026 Summer Dinner"
+  folder: "202607_용성양꼬치"
+  cover: "1.jpg"
+  category: "Events"
+  date: "2026-07-24"
+  location: "Daegu"
+
 - slug: "202607-icml"
   title: "2026 ICML"
   folder: "202607_icml"
