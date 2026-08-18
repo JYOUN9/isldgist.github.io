@@ -1,7 +1,7 @@
 schema: hugoblox/author/v1
 slug: taewonseo
 is_owner: true
-category: Master Students
+category: PhD Students
 order: 1
 name:
   display: Taewon Seo
@@ -12,7 +12,7 @@ name:
 status:
   icon: "☕️"
 role: |-
-  M.S. Student
+  M.S./Ph.D. Integrated
   Lab Representative
 bio: 
 tags:

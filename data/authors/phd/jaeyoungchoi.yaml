@@ -1,7 +1,7 @@
 schema: hugoblox/author/v1
 slug: jeayoungchoi
 is_owner: true
-category: Master Students
+category: PhD Students
 order: 2
 name:
   display: Jaeyoung Choi
@@ -11,7 +11,7 @@ name:
   pronouns: he/him
 status:
   icon: "☕️"
-role: M.S. Student
+role: M.S./Ph.D. Integrated
 bio: 
 tags:
   - Robotic A.I.

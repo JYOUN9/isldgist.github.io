@@ -1,13 +1,13 @@
 schema: hugoblox/author/v1
 slug: jiilyoon
-category: Interns
-order: 5
+category: Master Students
+order: 7
 name:
   display: Jiil Yoon
   given: Jiil
   family: Yoon
-role: Intern
-bio: B.S., Inha Univ
+role: M.S. Student
+bio: 
 tags:
   - Robotics A.I.
   - Human Motion Modeling
@@ -16,8 +16,17 @@ hidden_image: jiilyoon.jpg
 links:
   - icon: at-symbol
     url: mailto:wldlf2819@naver.com
-    label: Email
+    label: E-mail Me
+  - icon: homepage
+    url: 
+    label: Homepage
   - icon: brands/github
-    url: https://github.com/Yoon-Ji-Il 
+    url: https://github.com/Yoon-Ji-Il
     label: GitHub
+  - icon: brands/linkedin
+    url: 
+    label: LinkedIn
+  - icon: academicons/google-scholar
+    url: 
+    label: Google Scholar
 
