@@ -2,7 +2,7 @@ schema: hugoblox/author/v1
 slug: youngjinpark
 is_owner: true
 category: Master Students
-order: 3
+order: 1
 name:
   display: Youngjin Park
   given: Youngjin

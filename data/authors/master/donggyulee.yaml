@@ -2,7 +2,7 @@ schema: hugoblox/author/v1
 slug: donggyulee
 is_owner: true
 category: Master Students
-order: 8
+order: 6
 name:
   display: Donggyu Lee
   given: Donggyu
