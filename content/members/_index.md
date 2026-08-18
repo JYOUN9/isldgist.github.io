@@ -34,7 +34,7 @@ sections:
   - block: markdown
     id: phd-students
     content:
-      title: Ph.d Students
+      title: Ph.D Students
       text: |
         <div class="members-section-divider"></div>
         {{< members-phd >}}

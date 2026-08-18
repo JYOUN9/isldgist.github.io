@@ -2,7 +2,7 @@ schema: hugoblox/author/v1
 slug: sihyeonglee
 is_owner: true
 category: Master Students
-order: 5
+order: 3
 name:
   display: Sihyeong Lee
   given: Sihyeong

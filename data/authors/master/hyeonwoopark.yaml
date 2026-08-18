@@ -2,7 +2,7 @@ schema: hugoblox/author/v1
 slug: hyeonwoopark
 is_owner: true
 category: Master Students
-order: 6
+order: 4
 name:
   display: Hyeonwoo Park
   given: Hyeonwoo

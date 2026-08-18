@@ -2,7 +2,7 @@ schema: hugoblox/author/v1
 slug: hyunjinlim
 is_owner: true
 category: Master Students
-order: 4
+order: 2
 name:
   display: Hyunjin Lim
   given: Hyunjin
@@ -11,7 +11,7 @@ name:
   pronouns: he/him
 status:
   icon: "☕️"
-role: M.S. Student
+role: M.S./Ph.D. Integrated
 bio: 
 tags:
   - Self-Evolving A.I.

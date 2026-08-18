@@ -2,7 +2,7 @@ schema: hugoblox/author/v1
 slug: hyungchulshin
 is_owner: true
 category: Master Students
-order: 7
+order: 5
 name:
   display: Hyungchul Shin
   given: Hyungchul

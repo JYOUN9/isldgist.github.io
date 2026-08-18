@@ -6,7 +6,7 @@ name:
   display: Hyeondong Kim
   given: Hyeondong
   family: Kim
-role: Intern
+role: B.S./M.S./Ph.D. Integrated
 bio: B.S., DGIST
 tags:
   - Physical A.I.
@@ -25,3 +25,6 @@ links:
   - icon: brands/linkedin
     url: http://www.linkedin.com/in/hdkim2005
     label: LinkedIn
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=F6odIZAAAAAJ
+    label: Google Scholar
