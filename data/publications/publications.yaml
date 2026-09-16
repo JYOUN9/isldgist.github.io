@@ -75,6 +75,7 @@
     paper: https://openaccess.thecvf.com/content/CVPR2026F/papers/Choi_EggHand_A_Multimodal_Foundation_Model_for_Egocentric_Hand_Pose_Forecasting_CVPRF_2026_paper.pdf
     supp: https://openaccess.thecvf.com/content/CVPR2026F/supplemental/Choi_EggHand_A_Multimodal_CVPRF_2026_supplemental.pdf
     page: https://jyoun9.github.io/EggHand/
+    code:  https://github.com/JYOUN9/EggHand_Code
 
 - slug: Diffusion-Model-2025
   title: "Generative Active Learning for Long-tail Trajectory Prediction via Controllable Diffusion Model"
