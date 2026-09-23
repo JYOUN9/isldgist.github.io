@@ -13,5 +13,6 @@ tags:
   - Autonomous Driving
 hidden_image: jihyeokyang.jpg
 links:
-
-
+  - icon: at-symbol
+    url: mailto:elgurdl@gmail.com
+    label: Email
