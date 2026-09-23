@@ -1,0 +1,17 @@
+schema: hugoblox/author/v1
+slug: jihyeokyang
+category: Interns
+order: 12
+name:
+  display: Jihyeok Yang
+  given: Jihyeok
+  family: Yang
+role: Intern
+bio: B.S., Hanyang Univ. (ERICA)
+tags:
+  - Physical A.I.
+  - Autonomous Driving
+hidden_image: jihyeokyang.jpg
+links:
+
+
