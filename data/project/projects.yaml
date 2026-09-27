@@ -22,10 +22,19 @@
   program: "AI연구용 컴퓨팅 지원 프로젝트"
   funding: "과학기술정보통신부"
   organization: "한국전자기술연구원"
-  infra: "B200 * 8대"
+  infra: "H100 * 8대"
   status: "Ongoing"
   category: gpu
   start: "2026-07"
+
+- title: "경량형 온디바이스 인식 모델 최적화 연구 개발"
+  duration: "05/2026 - 12/2027 (2 years)"
+  program: "지역연계 미래모빌리티 AI융합 기술개발 공동연구"
+  funding: "경상북도"
+  organization: "한국전자통신연구원"
+  status: "Ongoing"
+  category: research
+  start: "2026-05"
 
 - title: "다중 휴머노이드의 자율 협업을 위한 비전-언어 모델 기반 적응형 장기·복합작업 계획 기술"
   duration: "04/2026 - 12/2030 (5 years)"
