@@ -5,6 +5,40 @@
 #   page: https://...
 #   code: https://github.com/...
 #   link: https://...
+- slug: Scene-Grounded-2026
+  title: "Learning Scene-Grounded Interaction Priors for Scene-Aware Human Motion Prediction"
+  authors:
+    - Donghyeon Soon*
+    - Jiil Yoon*
+    - Hyeondong Kim
+    - Daehee Park†
+  venue: NeurIPS
+  category: conference
+  date: 2026-12-06
+  method: Multi-modal Learning
+  domain: Human Motion Modeling
+  task: Pose Forecasting
+  links: 
+
+- slug: SRA-2026
+  title: "SRA: Spatial Reasoning Adapter via Evolving Social Interaction Graphs for Trajectory Prediction"
+  authors:
+    - Jaewoo Jeong*
+    - Seonkyu Song*
+    - Hyeonwoo Park
+    - Jegyeong Cho
+    - Yujin Bae
+    - Giwon Lee
+    - Daehee Park
+    - Kuk-Jin Yoon†
+  venue: NeurIPS
+  category: conference
+  date: 2026-12-06
+  method: 
+  domain: Autonomous Driving
+  task: Trajectory Prediction
+  links: 
+
 - slug: Merging-2026
   title: "Unified Prediction and Planning via Conflict-Aware Disjoint Parameter Training"
   authors:

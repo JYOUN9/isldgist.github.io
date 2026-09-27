@@ -1,3 +1,12 @@
+- date: 2026-09-26
+  type: publication
+  title: "Two papers accepted at NeurIPS 2026"
+  description: |-
+    (1) “Learning Scene-Grounded Interaction Priors for Scene-Aware Human Motion Prediction” by Donghyeon Soon*, Jiil Yoon*, Hyeondong Kim and Daehee Park†
+    (2) “SRA: Spatial Reasoning Adapter via Evolving Social Interaction Graphs for Trajectory Prediction” by Jaewoo Jeong*, Seonkyu Song*, Hyeonwoo Park, Jegyeong Cho, Yujin Bae, Giwon Lee, Daehee Park and Kuk-Jin Yoon†
+    Congratulations to all authors 🎉
+  image: "media/news/neurips_2026.png"
+
 - date: 2026-09
   type: Honor
   title: "Taewon Seo received the Outstanding Student Award at the DGIST 22nd Anniversary Ceremony 🎖️"
